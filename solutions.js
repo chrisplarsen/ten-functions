@@ -29,19 +29,16 @@ function isFalse(valueF) {
     return valueF === false;
 }
 
-function not(valueNot1, valueNot2) {
-    return valueNot1 !== valueNot2;
+function not(valueNot1) {
+    return !valueNot1
 }
 
 function addOne(numberAdd) {
-    return numberAdd = (numberAdd) + 1;
+    return ++numberAdd
 }
 
 function isEven(numberEven) {
-    if (numberEven % 2 == 0)
-        return true;
-    else
-        return false;
+    return (Number(numberEven) % 2) === 0;
 }
 
 function isIdentical(identical1, identical2) {
@@ -61,5 +58,5 @@ function and(and1, and2) {
 }
 
 function concat(lineA, lineB) {
-    return (lineA.concat(lineB));
+    return lineA.toString() + lineB.toString();
 }
